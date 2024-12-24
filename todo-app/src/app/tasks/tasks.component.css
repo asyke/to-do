@@ -1,0 +1,89 @@
+/* Overall styling */
+body,
+html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Input and button styling */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 75%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #449d44;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.completed {
+    color: #999;
+    text-decoration: line-through;
+}
+
+span {
+    flex-grow: 1;
+}
+
+/* Button specific to the list items */
+li button {
+    margin-left: 10px;
+}
+
+li button.delete {
+    background-color: #d9534f;
+}
+
+li button.delete:hover {
+    background-color: #c9302c;
+}
+
+li button.toggle {
+    background-color: #f0ad4e;
+}
+
+li button.toggle:hover {
+    background-color: #ec971f;
+}
